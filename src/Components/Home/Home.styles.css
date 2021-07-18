@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: montserra, sans-serif;
+}
+
+input, button {
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.home-card {
+    display: block;
+    position: fixed;
+    width: 60%;
+    height: 60%;
+}
+
+.card {
+    display: block;
+    position: relative;
+}
+
+.card:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: 1;
+    background-image: linear-gradient(to bottom right, #ffce00, #FE4880);
+}
+
+.card .card-inner {
+    position: relative;
+    display: block;
+    background-color: #FFF;
+    padding: 15px;
+    z-index: 2;
+}
+
+.card .card-inner .card-header {
+    color: #888;
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+form .form-inner .form-group {
+    display: block;
+    width: 300px;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    display: block;
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 20px;
+    transition: 0.4s;
+}
+
+.card .card-inner .btn {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background-image: linear-gradient(to right, #FFCE00 50%, #FFCE00 50%, #FE4880);
+    background-size: 200%;
+    background-position: 0%;
+    transition: 0.4s;
+    color: #FFF;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.card .card-inner .btn:hover {
+    background-position: 100% 0%;
+}
+
+.list-group-item {
+    width:50%;
+}
